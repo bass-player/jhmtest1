@@ -1,0 +1,20 @@
+/*
+ *输出100-200之间的素数
+ */
+public class prime_number {
+    public static void main(String[] args) {
+        System.out.println("可以");
+        for(int i=100;i<201;i++){
+            boolean pn = false;
+            for(int j=2;j<i-1;j++){
+                int k=i%j;
+                if(i%j==0){
+                    pn = true;
+                }
+            }
+            if(!pn){
+                System.out.println(i);
+            }
+        }
+    }
+}
